@@ -1,0 +1,343 @@
+{
+  "customers": 100000,
+  "annual_revenue": 70158716.7029018,
+  "mean_arpu": 58.465597252418156,
+  "sample_churn_rate": 0.49561428571428573,
+  "planning_churn_rate": 0.04,
+  "roc_auc_best": 0.6994767543136924,
+  "pr_auc_best": 0.6872279897425002,
+  "accuracy_best": 0.6409666666666667,
+  "brier_best": 0.21925279959569666,
+  "precision_at_10": 0.7886666666666666,
+  "lift_at_10": 1.5912300759970408,
+  "recall_at_10": 0.15912300759970407,
+  "precision_at_20": 0.7378333333333333,
+  "lift_at_20": 1.4886676978949493,
+  "revenue_at_risk_60d": 284507.52674463857,
+  "margin_at_risk_36m": 5121135.481403493,
+  "programme_customers": 43496,
+  "programme_spend": 222453.33333333334,
+  "programme_margin_protected": 404418.3127791993,
+  "programme_net": 181964.97944586587,
+  "programme_roi": 1.8179916961424085,
+  "uplift_value_vs_risk_top10": 1.44850531082281,
+  "uplift_value_vs_risk_top5": 1.6939189024844823,
+  "model_table": {
+    "XGBoost": {
+      "roc_auc": 0.6995,
+      "pr_auc": 0.6872,
+      "accuracy": 0.641,
+      "brier": 0.2193
+    },
+    "Random Forest": {
+      "roc_auc": 0.6774,
+      "pr_auc": 0.6602,
+      "accuracy": 0.6256,
+      "brier": 0.2273
+    },
+    "Logistic Regression": {
+      "roc_auc": 0.6366,
+      "pr_auc": 0.6113,
+      "accuracy": 0.5989,
+      "brier": 0.236
+    }
+  },
+  "programme_table": {
+    "Digital nudge": {
+      "Customers": 39103,
+      "Spend ($)": 78207.0,
+      "Expected margin protected ($)": 143303.0,
+      "Net ($)": 65096.0,
+      "ROI": 2.0
+    },
+    "Retention call": {
+      "Customers": 560,
+      "Spend ($)": 10080.0,
+      "Expected margin protected ($)": 13853.0,
+      "Net ($)": 3773.0,
+      "ROI": 1.0
+    },
+    "Device/plan offer": {
+      "Customers": 3833,
+      "Spend ($)": 134167.0,
+      "Expected margin protected ($)": 247262.0,
+      "Net ($)": 113096.0,
+      "ROI": 2.0
+    },
+    "No action": {
+      "Customers": 56503,
+      "Spend ($)": 0.0,
+      "Expected margin protected ($)": 0.0,
+      "Net ($)": 0.0,
+      "ROI": NaN
+    }
+  },
+  "lift_table": {
+    "1": {
+      "customers": 3000,
+      "churn_rate": 0.183,
+      "mean_score": 0.19689999520778656,
+      "lift": 0.3692
+    },
+    "2": {
+      "customers": 3000,
+      "churn_rate": 0.301,
+      "mean_score": 0.30480000376701355,
+      "lift": 0.6073
+    },
+    "3": {
+      "customers": 3000,
+      "churn_rate": 0.3807,
+      "mean_score": 0.37689998745918274,
+      "lift": 0.768
+    },
+    "4": {
+      "customers": 3000,
+      "churn_rate": 0.4247,
+      "mean_score": 0.43309998512268066,
+      "lift": 0.8568
+    },
+    "5": {
+      "customers": 3000,
+      "churn_rate": 0.4873,
+      "mean_score": 0.4805000126361847,
+      "lift": 0.9833
+    },
+    "6": {
+      "customers": 3000,
+      "churn_rate": 0.5153,
+      "mean_score": 0.5249000191688538,
+      "lift": 1.0397
+    },
+    "7": {
+      "customers": 3000,
+      "churn_rate": 0.5617,
+      "mean_score": 0.5685999989509583,
+      "lift": 1.1332
+    },
+    "8": {
+      "customers": 3000,
+      "churn_rate": 0.627,
+      "mean_score": 0.6157000064849854,
+      "lift": 1.265
+    },
+    "9": {
+      "customers": 3000,
+      "churn_rate": 0.687,
+      "mean_score": 0.6735000014305115,
+      "lift": 1.3861
+    },
+    "10": {
+      "customers": 3000,
+      "churn_rate": 0.7887,
+      "mean_score": 0.7838000059127808,
+      "lift": 1.5912
+    }
+  },
+  "grid_table": [
+    {
+      "max_depth": 8,
+      "min_child_weight": 40,
+      "val_auc": 0.6965,
+      "colsample_bytree": NaN,
+      "learning_rate": NaN,
+      "n_estimators": NaN
+    },
+    {
+      "max_depth": 6,
+      "min_child_weight": 40,
+      "val_auc": 0.6962,
+      "colsample_bytree": 0.5,
+      "learning_rate": NaN,
+      "n_estimators": NaN
+    },
+    {
+      "max_depth": 6,
+      "min_child_weight": 40,
+      "val_auc": 0.6962,
+      "colsample_bytree": NaN,
+      "learning_rate": 0.05,
+      "n_estimators": 500.0
+    },
+    {
+      "max_depth": 6,
+      "min_child_weight": 40,
+      "val_auc": 0.6957,
+      "colsample_bytree": NaN,
+      "learning_rate": NaN,
+      "n_estimators": NaN
+    },
+    {
+      "max_depth": 4,
+      "min_child_weight": 10,
+      "val_auc": 0.6948,
+      "colsample_bytree": NaN,
+      "learning_rate": NaN,
+      "n_estimators": NaN
+    },
+    {
+      "max_depth": 3,
+      "min_child_weight": 80,
+      "val_auc": 0.6896,
+      "colsample_bytree": NaN,
+      "learning_rate": NaN,
+      "n_estimators": NaN
+    }
+  ],
+  "auc_by_revenue_quartile": {
+    "Q1 low": 0.6913730961516102,
+    "Q2": 0.7052290401849581,
+    "Q3": 0.7192597638279594,
+    "Q4 high": 0.6981814372087207
+  },
+  "segment_table": {
+    "Base": {
+      "Customers": 100000,
+      "Share of base": 1.0,
+      "Churn rate": 0.4956,
+      "Mean ARPU": 58.72,
+      "Revenue share": 1.0
+    },
+    "High spend (>$100/mo)": {
+      "Customers": 11046,
+      "Share of base": 0.1105,
+      "Churn rate": 0.4919,
+      "Mean ARPU": 152.5704,
+      "Revenue share": 0.288
+    },
+    "Overage-heavy (>25% of bill)": {
+      "Customers": 25663,
+      "Share of base": 0.2566,
+      "Churn rate": 0.5259,
+      "Mean ARPU": 90.334,
+      "Revenue share": 0.3962
+    },
+    "Old handset (>24 months)": {
+      "Customers": 10811,
+      "Share of base": 0.1081,
+      "Churn rate": 0.5789,
+      "Mean ARPU": 43.1465,
+      "Revenue share": 0.0786
+    },
+    "Usage collapse (<\u2212100% MoU)": {
+      "Customers": 22585,
+      "Share of base": 0.2258,
+      "Churn rate": 0.5363,
+      "Mean ARPU": 75.9346,
+      "Revenue share": 0.2931
+    },
+    "Spending-limit account (ASL)": {
+      "Customers": 13936,
+      "Share of base": 0.1394,
+      "Churn rate": 0.4093,
+      "Mean ARPU": 67.3591,
+      "Revenue share": 0.1598
+    }
+  },
+  "sensitivity": [
+    {
+      "Churn scenario": "2% / cycle",
+      "Save rate": "conservative (\u221240%)",
+      "Net ($ per 100k per cycle)": 9761.32,
+      "ROI (x)": 1.54
+    },
+    {
+      "Churn scenario": "2% / cycle",
+      "Save rate": "base",
+      "Net ($ per 100k per cycle)": 38277.94,
+      "ROI (x)": 1.65
+    },
+    {
+      "Churn scenario": "2% / cycle",
+      "Save rate": "optimistic (+40%)",
+      "Net ($ per 100k per cycle)": 87241.2,
+      "ROI (x)": 1.73
+    },
+    {
+      "Churn scenario": "3% / cycle",
+      "Save rate": "conservative (\u221240%)",
+      "Net ($ per 100k per cycle)": 27696.4,
+      "ROI (x)": 1.62
+    },
+    {
+      "Churn scenario": "3% / cycle",
+      "Save rate": "base",
+      "Net ($ per 100k per cycle)": 98019.51,
+      "ROI (x)": 1.73
+    },
+    {
+      "Churn scenario": "3% / cycle",
+      "Save rate": "optimistic (+40%)",
+      "Net ($ per 100k per cycle)": 210578.66,
+      "ROI (x)": 1.84
+    },
+    {
+      "Churn scenario": "4% / cycle (base)",
+      "Save rate": "conservative (\u221240%)",
+      "Net ($ per 100k per cycle)": 54782.15,
+      "ROI (x)": 1.68
+    },
+    {
+      "Churn scenario": "4% / cycle (base)",
+      "Save rate": "base",
+      "Net ($ per 100k per cycle)": 181964.98,
+      "ROI (x)": 1.82
+    },
+    {
+      "Churn scenario": "4% / cycle (base)",
+      "Save rate": "optimistic (+40%)",
+      "Net ($ per 100k per cycle)": 373999.62,
+      "ROI (x)": 1.95
+    },
+    {
+      "Churn scenario": "6% / cycle",
+      "Save rate": "conservative (\u221240%)",
+      "Net ($ per 100k per cycle)": 133279.3,
+      "ROI (x)": 1.76
+    },
+    {
+      "Churn scenario": "6% / cycle",
+      "Save rate": "base",
+      "Net ($ per 100k per cycle)": 405290.13,
+      "ROI (x)": 1.95
+    },
+    {
+      "Churn scenario": "6% / cycle",
+      "Save rate": "optimistic (+40%)",
+      "Net ($ per 100k per cycle)": 789910.17,
+      "ROI (x)": 2.1
+    }
+  ],
+  "permutation_importance": {
+    "months": 0.03509,
+    "change_mou": 0.02502,
+    "eqpdays": 0.01369,
+    "mou_Mean": 0.01,
+    "avgqty": 0.00828,
+    "totmrc_Mean": 0.00819,
+    "rev_per_min": 0.00627,
+    "discount_depth": 0.00395,
+    "lor": 0.00392,
+    "avgmou": 0.00378,
+    "asl_flag": 0.00355,
+    "drop_vce_Mean": 0.00333,
+    "usage_trend": 0.00321,
+    "device_age_ratio": 0.00313,
+    "change_rev": 0.00294
+  },
+  "gain_importance_grouped": {
+    "area": 0.08139999955892563,
+    "ethnic": 0.0738999992609024,
+    "crclscod": 0.05869999900460243,
+    "refurb_new": 0.03530000150203705,
+    "marital": 0.029899999499320984,
+    "HHstatin": 0.0284000001847744,
+    "hnd_webcap": 0.025699999183416367,
+    "dwllsize": 0.02459999918937683,
+    "prizm_social_one": 0.023900000378489494,
+    "eqpdays": 0.022099999710917473,
+    "months": 0.0215000007301569,
+    "asl_flag": 0.019200000911951065
+  },
+  "grid_spread": 0.006954484677742512
+}
