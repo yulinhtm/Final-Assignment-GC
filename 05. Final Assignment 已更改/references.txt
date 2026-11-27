@@ -1,0 +1,9 @@
+Federal Communications Commission, 2024 Communications Marketplace Report, FCC 24-136, GN Docket No. 24-119 (adopted 30 Dec 2024). https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf
+Bain & Company, Prescription for Cutting Costs (F. Reichheld). https://media.bain.com/Images/BB_Prescription_cutting_costs.pdf
+CTIA, Year-End 2023 Wireless Industry Indices Report (as reported in the FCC 2024 Communications Marketplace Report).
+T. Chen and C. Guestrin, "XGBoost: A Scalable Tree Boosting System," KDD '16, 2016. https://doi.org/10.1145/2939672.2939785
+Recurly Research, Churn Rate Benchmarks. https://recurly.com/research/churn-rate-benchmarks/
+F. Pedregosa et al., "Scikit-learn: Machine Learning in Python," JMLR 12 (2011): 2825-2830.
+Duke University, Fuqua School of Business / Teradata Center for CRM, Cell2Cell churn dataset. http://www.fuqua.duke.edu/centers/ccrm/datasets/cell/Cell2Cell_Case.pdf
+Company A dataset, telecom/Client.csv and telecom/Record.csv (GCI World 2026 Final Assignment materials).
+Generative AI (Claude, Anthropic) chat history: https://claude.ai/code/session_01SQk5ujE8voTvsiDpgD4DDv
